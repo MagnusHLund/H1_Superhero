@@ -53,10 +53,10 @@ namespace H1_Superhero
             hero[2].HasNemesis = false;
             hero[2].HasPrivateAnxiety = false;
 
-            view();
+            View();
         }
 
-        void view()
+        void View()
         {
             // For loop to go through each hero in the hero array
             for (int i = 0; i < 3; i++)
