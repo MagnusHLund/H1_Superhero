@@ -7,13 +7,6 @@ namespace H1_Superhero
         // Creates an array with 3 positions
         Superhero[] hero = new Superhero[3];
 
-        static void Main()
-        {
-            // Calls the superheroes method, which is not static
-            Program program = new Program();
-            program.Superheroes();
-        }
-
         void Superheroes()
         {
             // Assigns a new class "Superhero" to each of the positions in the hero array
@@ -74,6 +67,13 @@ namespace H1_Superhero
 
                 // Creates a space
                 Console.WriteLine();
+            }
+
+            static void Main()
+            {
+                // Calls the superheroes method, which is not static
+                Program program = new Program();
+                program.Superheroes();
             }
         }
     }
