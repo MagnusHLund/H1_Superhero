@@ -64,7 +64,11 @@ namespace H1_Superhero
                 // Checks each property for the hero in the array
                 foreach (PropertyInfo info in hero[i].GetType().GetProperties())
                 {
-                    // Outputs the name of the property, as well as the value
+                    // This code outputs the name of the property, as well as the value
+                    // We need to give "GetValue" our object, which is the class called "Superhero" because it is not part of the "memberInfo".
+                    // This means that it cant figure out which object we want to call, by itself. Thats why it should be assigned, by using "hero[i]"
+                    // The hero array contains our objects.
+                    // GetValue finds a property, which matches with the PropertyInfo, inside the given object.
                     Console.WriteLine($"{info.Name}: {info.GetValue(hero[i])}");
                 }
 
